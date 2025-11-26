@@ -23,9 +23,32 @@ Colocar variables en Watch para realizar la verificacion del codigo.
 
 ## Para el ejemplo_avanzado
 
-Se ejecuta en shell
+Ir al terminal de Windows de la carpeta de ejemplo_intermedio
+
+```python
+cd ejemplo_intermedio
+```
+
+Se crea un entorno virtual, en algunos casos es recomendable para evitar incompatibilidad de versiones.
+
+```python
+python -m venv venv
+
+.\venv\Scripts\activate
+
+```
+
+Luego, se procede a realizar la instalacion de dependencias
+
+```python
 pip install -r requirements.txt
-y luego
+```
+
+o usar
+
+```python
+pip install models fastapi uvicorn[standard]
+```
 
 uvicorn main:app --reload
 
