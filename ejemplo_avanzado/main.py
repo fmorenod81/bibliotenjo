@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .models import Tarea
+from models import Tarea
 
 app = FastAPI()
 tareas_db = []
@@ -16,9 +16,12 @@ def crear(tarea: Tarea):
 @app.get("/")
 def raiz():
     mensaje = "API de tareas - Python 3.12 + FastAPI"
-    return {"mensaje": mensaje}
+    return {"mensaje": "API de tareas - Python 3.12 + FastAPI"}
 
 @app.get("/yellow")
 def yellow():
     return {"cualquier": "Devuelve un yellow"}
 
+#@app.get("/contar")
+#def contar():
+#    return len(tareas_db)

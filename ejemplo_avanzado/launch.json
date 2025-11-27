@@ -17,7 +17,7 @@
                 "--port",
                 "8000"
             ],
-            "cwd": "${workspaceFolder}",
+             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "justMyCode": true 
         }
